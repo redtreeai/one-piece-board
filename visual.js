@@ -558,9 +558,9 @@ function draw(data) {
       .delay(500 * interval_time)
       .duration(2490 * interval_time)
       .text(function (d) {
-        if (use_type_info) {
-          return d[divide_by] + "-" + d.name;
-        }
+        //if (use_type_info) {
+         // return d[divide_by] + "-" + d.name;
+        //}
         return d.name;
       })
       .attr("x", d => {
@@ -685,9 +685,9 @@ function draw(data) {
     var barInfo = barUpdate
       .select(".barInfo")
       .text(function (d) {
-        if (use_type_info) {
-          return d[divide_by] + "-" + d.name;
-        }
+        //if (use_type_info) {
+        //   return d[divide_by] + "-" + d.name;
+       // }
         return d.name;
       })
       .attr("x", d => {
